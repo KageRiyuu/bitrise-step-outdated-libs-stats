@@ -73,7 +73,6 @@ inputs:
       description: |
         Marker to represent unused libs
       is_required: true
-      is_sensitive: true
 
   - UPDATE_AVAILABLE_MARKER: 
     opts:
@@ -90,4 +89,3 @@ inputs:
       description: |
         Marker to represent lib who's major version update is avaiable
       is_required: true
-      
