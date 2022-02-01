@@ -16,9 +16,11 @@ You need to pass these param, all are required:
 
 Add this in your bitrise.yml file and replace proper variables:
 
+```
 - git::https://github.com/EC-Mobile/bitrise-step-create-pr.git@main:
-        title: Outdated Libs Stats
-        inputs:
-        - UNUSED_MARKER: ":ghost:"
-        - UPDATE_AVAILABLE_MARKER: ":rocket:"
-        - MAIN_VERSION_AVAILABLE_MARKER: ":fire:"
+    title: Outdated Libs Stats
+    inputs:
+    - UNUSED_MARKER: ":ghost:"
+    - UPDATE_AVAILABLE_MARKER: ":rocket:"
+    - MAIN_VERSION_AVAILABLE_MARKER: ":fire:"
+```
