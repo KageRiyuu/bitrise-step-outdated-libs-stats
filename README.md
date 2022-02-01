@@ -1,42 +1,24 @@
-# PR-Create
+# Outdated-Libs-Stats
 
-You can use this step to create PR on your bitbucket repo. 
-
-This step uses BitBucket V1 api.
+This step will create report about versions of used libraries.
 
 
 ## Required Params and Sample Values
 
 You need to pass these param, all are required:
 
-### Secure Params:
-
-- GIT_ACCESS_TOKEN:                     You can create in your bitbucket account settings.
-
-### Normal Params;
-- GIT_BASE_URL:                                    https://gitpub.mydomain.com
-- GIT_PROJECT:                                      My-MOBILE
-- GIT_REPO:                                            app-ios
-- PR_TITLE:                                             This is a Test PR
-- PR_DESCRIPTION:                               Created from bash script...
-- BRANCH_TO:                                        develop
-- BRANCH_FROM:                                  master
-- TEAM_LEAD_GIT_NAME:                     kage.ryu
+### Normal Params
+- UNUSED_MARKER:                    ":ghost:"
+- UPDATE_AVAILABLE_MARKER:          ":rocket:"
+- MAIN_VERSION_AVAILABLE_MARKER:    ":fire:"
 
 ## How to use this Step
 
 Add this in your bitrise.yml file and replace proper variables:
 
 - git::https://github.com/EC-Mobile/bitrise-step-create-pr.git@main:
-        title: PR Creator
+        title: Outdated Libs Stats
         inputs:
-        - GIT_BASE_URL: https://gitpub.rakuten-it.com
-        - GIT_ACCESS_TOKEN: <Variable>
-        - GIT_PROJECT: <Project>
-        - GIT_REPO: <Repo>
-        - PR_TITLE: "[Merge Me With Care] - From $BITRISE_GIT_BRANCH -> Develop"
-        - PR_DESCRIPTION: This PR is created from CI !!\\n*Only merge when you see
-            code will not disturbe the develop branch.
-        - BRANCH_TO: develop
-        - BRANCH_FROM: <Variable>
-        - TEAM_LEAD_GIT_NAME: <Variable>
+        - UNUSED_MARKER: ":ghost:"
+        - UPDATE_AVAILABLE_MARKER: ":rocket:"
+        - MAIN_VERSION_AVAILABLE_MARKER: ":fire:"

@@ -71,9 +71,9 @@ workflows:
       - git::https://github.com/EC-Mobile/bitrise-step-create-pr.git@main:
         title: Outdated Libs Stats
         inputs:
-        - UNUSED_MARKER: :ghost:
-        - UPDATE_AVAILABLE_MARKER: :rocket:
-        - MAIN_VERSION_AVAILABLE_MARKER: :fire:
+        - UNUSED_MARKER: ":ghost:"
+        - UPDATE_AVAILABLE_MARKER: ":rocket:"
+        - MAIN_VERSION_AVAILABLE_MARKER: ":fire:"
     before_run:
     - audit-this-step
     steps:
