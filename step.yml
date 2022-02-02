@@ -63,4 +63,7 @@ inputs:
       is_required: true
 
 outputs:
-  - PODS_USED_STATUSa: "Detail list of libraries and version stats"
+  - MY_KEY_FOR_THE_ENV: my value for the env
+    opts:
+      title: An example env var item
+      is_dont_change_value: false
