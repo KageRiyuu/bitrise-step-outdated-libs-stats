@@ -66,14 +66,6 @@ toolkit:
 
 inputs:
 
-  - WORKING_DIRECTORY:
-    opts:
-      title: Working Directory
-      summary: Path to source code
-      description: |
-        Path to source code
-      is_required: true
-
   - UNUSED_MARKER: 
     opts:
       title: Marker to represent unused libs
@@ -105,5 +97,5 @@ outputs:
     opts:
       title: Detail list of libraries and version stats
       summary: Detail list of libraries and version stats
-      description: |
+        description: |
           Detail list of libraries and version stats

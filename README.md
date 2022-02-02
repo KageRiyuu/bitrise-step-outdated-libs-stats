@@ -20,7 +20,6 @@ Add this in your bitrise.yml file and replace proper variables:
 - git::https://github.com/KageRiyuu/bitrise-step-outdated-libs-stats.git@main:
     title: Outdated Libs Stats
     inputs:
-    - WORKING_DIRECTORY: "$BITRISE_SOURCE_DIR"
     - UNUSED_MARKER: ":ghost:"
     - UPDATE_AVAILABLE_MARKER: ":rocket:"
     - MAIN_VERSION_AVAILABLE_MARKER: ":fire:"
