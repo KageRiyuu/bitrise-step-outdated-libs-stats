@@ -121,3 +121,4 @@ ${MAIN_VERSION_AVAILABLE_MARKER} = New main version available (Recomend Update)
 STATS=$(generatePodsStats)
 echo "$STATS"
 envman add --key MY_KEY_FOR_THE_ENV --value "${STATS}"
+export MY_KEY_FOR_THE_ENV=${STATS}
