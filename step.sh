@@ -93,4 +93,4 @@ STATS=$(generatePodsStats)
 echo "$STATS"
 
 envman add --key PODS_USED_STATUS --value "$STATS"
-envman run bash -c
+envman run bash -c 'echo $PODS_USED_STATUS'
