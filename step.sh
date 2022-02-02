@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -ex
+set -ex
 
 # Input values for test purpose
 # export UNUSED_MARKER="$"
