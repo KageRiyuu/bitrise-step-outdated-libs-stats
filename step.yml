@@ -97,5 +97,5 @@ outputs:
     opts:
       title: Detail list of libraries and version stats
       summary: Detail list of libraries and version stats
-        description: |
+      description: |
           Detail list of libraries and version stats
