@@ -63,8 +63,4 @@ inputs:
       is_required: true
 
 outputs:
-
-  - PODS_USED_STATUSa: Detail list of libraries and version stats
-    opts:
-      title: Detail list of libraries and version stats
-      summary: Detail list of libraries and version stats
+  - PODS_USED_STATUSa: "Detail list of libraries and version stats"
