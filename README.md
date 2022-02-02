@@ -17,7 +17,7 @@ You need to pass these param, all are required:
 Add this in your bitrise.yml file and replace proper variables:
 
 ```
-- git::https://github.com/EC-Mobile/bitrise-step-create-pr.git@main:
+- git::https://github.com/KageRiyuu/bitrise-step-outdated-libs-stats.git@main:
     title: Outdated Libs Stats
     inputs:
     - UNUSED_MARKER: ":ghost:"

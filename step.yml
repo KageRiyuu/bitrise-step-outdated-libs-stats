@@ -14,9 +14,9 @@ summary: |
 description: |
   This step uses will generate report of outdated libs.
   It suppords Coca Pods.
-website: https://github.com/EC-Mobile/bitrise-step-create-pr
-source_code_url: https://github.com/EC-Mobile/bitrise-step-create-pr
-support_url: https://github.com/EC-Mobile/bitrise-step-create-pr/issues
+website: https://github.com/KageRiyuu/bitrise-step-outdated-libs-stats
+source_code_url: https://github.com/KageRiyuu/bitrise-step-outdated-libs-stats
+support_url: https://github.com/KageRiyuu/bitrise-step-outdated-libs-stats
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -90,6 +90,12 @@ inputs:
         Marker to represent lib who's major version update is avaiable
       is_required: true
 
+
 outputs:
 
   - PODS_USED_STATUS: Detail list of libraries and version stats
+    opts:
+      title: Detail list of libraries and version stats
+      summary: Detail list of libraries and version stats
+        description: |
+          Detail list of libraries and version stats
