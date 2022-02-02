@@ -89,3 +89,11 @@ inputs:
       description: |
         Marker to represent lib who's major version update is avaiable
       is_required: true
+
+outputs:
+  - USED_LIBS_STATUS:
+    opts:
+      title: Detail list of libraries and version stats
+      summary: Detail list of libraries and version stats
+      description: |
+        Detail list of libraries and version stats
