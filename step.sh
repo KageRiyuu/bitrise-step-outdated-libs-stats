@@ -120,4 +120,4 @@ ${MAIN_VERSION_AVAILABLE_MARKER} = New main version available (Recomend Update)
 }
 STATS=$(generatePodsStats)
 echo "$STATS"
-envman add --key PODS_USED_STATUS --value "kkkk"
+envman add --key PODS_USED_STATUS --value "This is a test."
