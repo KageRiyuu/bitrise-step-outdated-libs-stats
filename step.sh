@@ -2,6 +2,7 @@
 # set -ex
 
 # Input values for test purpose
+# export WORKING_DIRECTORY="./"
 # export UNUSED_MARKER="$"
 # export UPDATE_AVAILABLE_MARKER="#"
 # export MAIN_VERSION_AVAILABLE_MARKER="@"
@@ -10,6 +11,7 @@ echo "Building Stats: "
 echo "- Unused Marker: ${UNUSED_MARKER}"
 echo "- Update Available Marker: ${UPDATE_AVAILABLE_MARKER}"
 echo "- Main Version Update Marker: ${MAIN_VERSION_AVAILABLE_MARKER}"
+echo "- Working Directory: ${WORKING_DIRECTORY}"
 
 function markOldPods() {
     local LINES=$(echo "$STATS" | wc -l)
@@ -89,6 +91,7 @@ ${MAIN_VERSION_AVAILABLE_MARKER} = New main version available (Recomend Update)
     $STATS"
     echo "$STATS"
 }
+cd ${WORKING_DIRECTORY}
 STATS=$(generatePodsStats)
 echo "$STATS"
 envman add --key PODS_USED_STATUS --value "${STATS}"
