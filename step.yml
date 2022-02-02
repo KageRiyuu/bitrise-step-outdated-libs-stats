@@ -62,7 +62,6 @@ inputs:
         Marker to represent lib who's major version update is avaiable
       is_required: true
 
-
 outputs:
 
   - PODS_USED_STATUSa: Detail list of libraries and version stats
